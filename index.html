@@ -2,28 +2,117 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+
+    <!-- Essential Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Learn English effectively with our revolutionary language learning platform. Interactive lessons, real-time feedback, and a supportive community." />
-    <meta name="keywords" content="language learning, English, interactive lessons, language platform" />
+    <meta
+      name="description"
+      content="Learn English effectively with AI-powered personalized lessons, practice tests, and comprehensive grammar guidance. Join 15,000+ confident learners today!"
+    />
+    <meta
+      name="keywords"
+      content="AI English learning, personalized lessons, TOEIC practice, IELTS preparation, English grammar, vocabulary builder, language learning platform, English speaking practice"
+    />
     <meta name="author" content="Micro English" />
-    <meta property="og:title" content="Micro English - Revolutionary Language Learning" />
-    <meta property="og:description" content="Learn English effectively with our revolutionary language learning platform." />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, snippet, archive" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://micro-englishs.com" />
+    <meta
+      property="og:title"
+      content="Micro English - AI-Powered English Learning Platform | Join 15,000+ Learners"
+    />
+    <meta
+      property="og:description"
+      content="Master English with AI-powered personalized lessons, practice tests, and comprehensive grammar guidance. Start your journey today!"
+    />
+    <meta property="og:image" content="https://micro-englishs.com/logo.png" />
+    <meta property="og:site_name" content="Micro English" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Micro English - Revolutionary Language Learning" />
-    <meta name="twitter:description" content="Learn English effectively with our revolutionary language learning platform." />
-    <title>Micro English - Revolutionary Language Learning Platform</title>
+    <meta name="twitter:url" content="https://micro-englishs.com" />
+    <meta
+      name="twitter:title"
+      content="Micro English - AI-Powered English Learning Platform"
+    />
+    <meta
+      name="twitter:description"
+      content="Master English with AI-powered personalized lessons, practice tests, and comprehensive grammar guidance. Start your journey today!"
+    />
+    <meta name="twitter:image" content="https://micro-englishs.com/logo.png" />
+    <meta name="twitter:site" content="@microenglish" />
+    <meta name="twitter:creator" content="@microenglish" />
+
+    <!-- Favicons and Icons -->
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <meta name="theme-color" content="#1890ff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Micro English" />
+
+    <!-- Prevent automatic phone number detection -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Title -->
+    <title>
+      Micro English - AI-Powered English Learning Platform | Master English with
+      AI
+    </title>
+
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://micro-englishs.com" />
+
+    <!-- Hreflang for internationalization -->
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://micro-englishs.com?lang=en"
+    />
+    <link
+      rel="alternate"
+      hreflang="vi"
+      href="https://micro-englishs.com?lang=vi"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://micro-englishs.com"
+    />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/logo.png" as="image" />
+    <link rel="preload" href="data:text/javascript;base64,aW1wb3J0IHsgY3JlYXRlQXBwLCB3YXRjaCB9IGZyb20gInZ1ZSI7CmltcG9ydCBBbnRkIGZyb20gImFudC1kZXNpZ24tdnVlIjsKaW1wb3J0ICJhbnQtZGVzaWduLXZ1ZS9kaXN0L3Jlc2V0LmNzcyI7CmltcG9ydCAiLi9zdHlsZS5jc3MiOwppbXBvcnQgQXBwIGZyb20gIi4vQXBwLnZ1ZSI7CmltcG9ydCByb3V0ZXIgZnJvbSAiLi9yb3V0ZSI7CmltcG9ydCB7IGkxOG4gfSBmcm9tICIuL3BsdWdpbnMvaTE4biI7CmltcG9ydCB7IHNldHVwU3RvcmUgfSBmcm9tICIuL3N0b3JlcyI7CmltcG9ydCB7IHJlZ2lzdGVyVm9jYWJ1bGFyeVNlcnZpY2VXb3JrZXIgfSBmcm9tICdAL3V0aWxzL3NlcnZpY2VXb3JrZXJSZWdpc3RyYXRpb24nOwppbXBvcnQgeyBzZXR1cE1ldGFUYWdzV2F0Y2hlciB9IGZyb20gJy4vdXRpbHMvbWV0YU1hbmFnZXInOwppbXBvcnQgeyBNb3Rpb25QbHVnaW4gfSBmcm9tICJAdnVldXNlL21vdGlvbiI7Cgpjb25zdCBhcHAgPSBjcmVhdGVBcHAoQXBwKTsKc2V0dXBTdG9yZShhcHApOwphcHAudXNlKEFudGQpOwphcHAudXNlKHJvdXRlcik7CmFwcC51c2UoaTE4bik7CmFwcC51c2UoTW90aW9uUGx1Z2luKTsKCi8vIFJlZ2lzdGVyIHNlcnZpY2Ugd29ya2VyIGZvciB2b2NhYnVsYXJ5IGNhY2hpbmcKcmVnaXN0ZXJWb2NhYnVsYXJ5U2VydmljZVdvcmtlcigpOwoKLy8gU2V0dXAgbWV0YSB0YWdzIHdhdGNoZXIgZm9yIGR5bmFtaWMgU0VPIGJhc2VkIG9uIGN1cnJlbnQgbG9jYWxlCnNldHVwTWV0YVRhZ3NXYXRjaGVyKCk7CgovLyBXYXRjaCBmb3IgbGFuZ3VhZ2UgY2hhbmdlcyBhbmQgdXBkYXRlIG1ldGEgdGFncwp3YXRjaCgoKSA9PiBpMThuLmdsb2JhbC5sb2NhbGUudmFsdWUsICgpID0+IHsKICAvLyBUaGlzIHdpbGwgdXBkYXRlIGFsbCBtZXRhIHRhZ3Mgd2hlbiB0aGUgbGFuZ3VhZ2UgY2hhbmdlcwogIHNldFRpbWVvdXQoKCkgPT4gc2V0dXBNZXRhVGFnc1dhdGNoZXIoKSwgMCk7Cn0pOwoKYXBwLm1vdW50KCIjYXBwIik7Cg==" as="script" />
+
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+
+    <!-- Stylesheets -->
+
     <!-- Google AdSense -->
     <script
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2297163773612235"
       crossorigin="anonymous"
     ></script>
-    <script type="module" crossorigin src="/assets/index-LOYNgkjA.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BwCvvMs-.css">
+
+    <!-- Google Analytics (add your tracking ID) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script> -->
+    <script type="module" crossorigin src="/assets/index-D0C9TAsn.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CmQ3fkE0.css">
   </head>
   <body>
     <div id="app"></div>

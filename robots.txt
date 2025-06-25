@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Block access to admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+
+# Allow important pages
+Allow: /vocabulary
+Allow: /grammar
+Allow: /reading
+Allow: /writing
+Allow: /listening
+Allow: /practice
+Allow: /certificates
+Allow: /login
+
+# Block search and temporary pages
+Disallow: /search
+Disallow: /temp/
+Disallow: /*.json$
+
+# Sitemap location
+Sitemap: https://micro-englishs.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1 
