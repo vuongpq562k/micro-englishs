@@ -36,7 +36,7 @@ self.addEventListener("activate", (event) => {
         cacheNames.map((cacheName) => {
           if (cacheName !== CACHE_NAME) {
             console.log("Service Worker: Removing old cache", cacheName);
-            return caches.delete(cacheName);
+          return caches.delete(cacheName);
           }
         }),
       );
@@ -64,13 +64,13 @@ self.addEventListener("fetch", (event) => {
         return fetch(event.request).then((networkResponse) => {
           // Only cache successful responses
           if (networkResponse.status === 200) {
-            // Clone the response for both cache and return
-            const responseToCache = networkResponse.clone();
+          // Clone the response for both cache and return
+          const responseToCache = networkResponse.clone();
 
-            caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, responseToCache);
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseToCache);
               console.log("Service Worker: Cached response", event.request.url);
-            });
+          });
           }
 
           return networkResponse;
